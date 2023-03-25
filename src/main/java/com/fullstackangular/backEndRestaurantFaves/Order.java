@@ -75,7 +75,13 @@ public class Order {
 		this.orderAgain = orderAgain;
 	}
 	
-	
+	public Order(String description, String restaurant, int rating, boolean orderAgain) {
+		super();
+		this.description = description;
+		this.restaurant = restaurant;
+		this.rating = rating;
+		this.orderAgain = orderAgain;
+	}
 
 	
 	

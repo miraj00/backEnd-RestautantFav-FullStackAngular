@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin(origins = "http://localhost:8080/orders/{id}")
 @RestController
 public class OrderController {
 
@@ -25,7 +25,7 @@ public class OrderController {
 	
 	
 	// method to access DAO ( Data Access Object )
-	@GetMapping("/")
+	@GetMapping("/orders")
 	public List<Order> getOrders(){
 		return repo.findAll();
 	}
